@@ -11,4 +11,8 @@ public class Fragment08 extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment08);
     }
+    Cabecera primerFragmento=new Cabecera();
+    primerFragmento.setArguments(getIntent().getExtras());
+    getSupportFragmentManager().beginTransaction().add(R.id.contenedor,primerFragmento).commit();
+
 }
